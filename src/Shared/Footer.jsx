@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='flex flex-col md:flex-row justify-between'>
+        <div className='flex flex-col md:flex-row justify-between mx-auto border-t-4 py-8 mt-4 border-blue-950'>
             <div>
                 <p>কারিগরি সহায়তায়:</p>
                 <p>কর্পোরেট সিস্টেম সলিউশনস লিমিটেড</p>

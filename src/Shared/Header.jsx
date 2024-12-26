@@ -1,9 +1,12 @@
 import React from 'react';
+import Banner from '../Pages/Banner/Banner';
+import Navbar from './Navbar';
 
 const Header = () => {
     return (
         <div>
-            Header
+           <Banner/>
+           <Navbar/>
         </div>
     );
 };

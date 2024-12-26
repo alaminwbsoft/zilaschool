@@ -1,3 +1,9 @@
+body {
+    background-image: url('./assets/background.png');
+
+  
+  
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
