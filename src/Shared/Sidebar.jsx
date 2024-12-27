@@ -23,12 +23,14 @@ const Sidebar = () => {
           অভ্যন্তরীণ ই-সেবা
         </h3>
         <ul className="list-disc list-inside text-gray-700">
-          <li className="hover:text-blue-500 cursor-pointer">ই-স্কুল</li>
+          <li className="hover:text-blue-500 text-red-700 cursor-pointer">
+            ই-স্কুল
+          </li>
           <li className="hover:text-blue-500 cursor-pointer">পাঠশালা</li>
           <li className="hover:text-blue-500 cursor-pointer">
             পিডিএস (সরকারি মাধ্যমিক)
           </li>
-          <li className="hover:text-blue-500 cursor-pointer">
+          <li className="hover:text-blue-500 text-red-700 cursor-pointer">
             ভর্তি পরীক্ষা আবেদন
           </li>
         </ul>

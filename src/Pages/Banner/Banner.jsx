@@ -28,7 +28,7 @@ const Banner = () => {
 
       {/* Text Overlay */}
       <div className="text-white absolute bottom-8 left-10">
-        <img src={logo} alt="logo" className="w-24 h-24" />
+        <img src={logo} alt="logo" className="w-24 h-24 hidden md:block" />
         <p className="text-3xl font-extrabold mt-2">রংপুর সদর, রংপুর</p>
         <p className="text-2xl font-bold">রংপুর জিলা স্কুল</p>
       </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,7 +11,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 md:hidden">
           {/* Logo (Only for mobile devices) */}
           <div className="text-2xl font-bold text-blue-600">
-            <NavLink to="/">Logo</NavLink>
+            <NavLink to="/">
+              <img src={logo} alt="" className="h-16 w-16" />
+            </NavLink>
           </div>
 
           {/* Mobile Menu Button */}
