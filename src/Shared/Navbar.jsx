@@ -60,16 +60,16 @@ const Navbar = () => {
               </button>
               <div className="absolute left-0 hidden mt-1 bg-white shadow-lg group-hover:block z-10">
                 <NavLink
-                  to="/introduction-1"
+                  to="/"
                   className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-blue-500"
                 >
-                  পরিচিতি ১
+                  পরিচিতি
                 </NavLink>
                 <NavLink
-                  to="/introduction-2"
+                  to="/short-history"
                   className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-blue-500"
                 >
-                  পরিচিতি ২
+                  সংক্ষিপ্ত ইতিহাস
                 </NavLink>
               </div>
             </div>
