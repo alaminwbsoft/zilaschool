@@ -53,10 +53,18 @@ const Sidebar = () => {
           <li className="hover:text-blue-500 cursor-pointer">
             <a href="https://banbeis.gov.bd/">ব্যানবেইস</a>
           </li>
-          <li className="hover:text-blue-500 cursor-pointer">নায়েম</li>
-          <li className="hover:text-blue-500 cursor-pointer">এনসিটিবি</li>
-          <li className="hover:text-blue-500 cursor-pointer">শিক্ষক বাতায়ন</li>
-          <li className="hover:text-blue-500 cursor-pointer">কিশোর বাতায়ন</li>
+          <li className="hover:text-blue-500 cursor-pointer">
+            <a href="https://naem.gov.bd/">নায়েম</a>
+          </li>
+          <li className="hover:text-blue-500 cursor-pointer">
+            <a href="https://nctb.gov.bd/">এনসিটিবি</a>
+          </li>
+          <li className="hover:text-blue-500 cursor-pointer">
+            <a href="https://www.teachers.gov.bd/">শিক্ষক বাতায়ন</a>
+          </li>
+          <li className="hover:text-blue-500 cursor-pointer">
+            <a href="https://www.konnect.edu.bd/">কিশোর বাতায়ন</a>
+          </li>
         </ul>
       </div>
 
@@ -66,7 +74,9 @@ const Sidebar = () => {
           ওয়েব মাস্টার
         </h3>
         <p className="text-gray-700 hover:text-blue-500 mb-20 cursor-pointer">
-          ওয়েব মাস্টার লগইন
+          <a href="http://sib.gov.bd/webmaster/default.aspx">
+            ওয়েব মাস্টার লগইন
+          </a>
         </p>
       </div>
     </div>

@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex justify-between items-center text-center h-16">
+        <div className="hidden md:flex justify-between items-center text-center h-16 ">
           <div className="flex gap-12  items-center">
             <NavLink
               to="/"
@@ -55,19 +55,19 @@ const Navbar = () => {
 
             {/* পরিচিতি */}
             <div className="group relative">
-              <button className="text-gray-700 hover:text-blue-500">
+              <button className="text-gray-700 hover:text-blue-500 ">
                 পরিচিতি
               </button>
-              <div className="absolute left-0 hidden mt-1 bg-white shadow-lg group-hover:block z-10">
+              <div className="absolute w-[200px] left-0 hidden mt-2 bg-white shadow-lg group-hover:block ">
                 <NavLink
                   to="/"
-                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-blue-500"
+                  className="block py-2 text-left px-2 text-gray-600 hover:bg-gray-100 hover:text-blue-500 "
                 >
-                  পরিচিতি
+                  এক নজরে পরিচিতি
                 </NavLink>
                 <NavLink
                   to="/short-history"
-                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-blue-500"
+                  className="block text-left  py-2 px-2 text-gray-600 hover:bg-gray-100 hover:text-blue-500"
                 >
                   সংক্ষিপ্ত ইতিহাস
                 </NavLink>
