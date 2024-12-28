@@ -19,7 +19,6 @@ const LayOut = () => {
           </div>
         </div>
         {/* Footer */}
-
         <Footer />
       </div>
     </>
