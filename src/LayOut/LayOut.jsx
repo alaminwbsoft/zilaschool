@@ -10,11 +10,11 @@ const LayOut = () => {
         <Header />
         <div className="flex flex-col md:flex-row">
           {/* Main Content */}
-          <div className="w-[79%]">
+          <div className="w-[77%]">
             <Outlet />
           </div>
           {/* Sidebar */}
-          <div className="w-[20%] absolute right-0 top-[402px] bottom-40 mr-5 ml-5  ">
+          <div className="w-[22%] absolute right-0 top-[385px] bottom-40 mr-5 ml-5  ">
             <Sidebar />
           </div>
         </div>

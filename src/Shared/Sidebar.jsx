@@ -12,7 +12,7 @@ const Sidebar = () => {
         <img
           src={teacher}
           alt="Principal"
-          className="w-64 h-72 rounded-sm mx-auto border border-gray-300"
+          className="w-52 h-56 rounded-sm mx-auto border border-gray-300"
         />
         <p className="mt-2 text-gray-700 font-semibold text-cText">
           মোঃ আবুল কালাম আজাদ
@@ -72,7 +72,7 @@ const Sidebar = () => {
 
       {/* Web Master Section */}
       <div className="mt-6">
-        <p className="text-base font-bold border bg-blue-500 mb-2 text-white p-1">
+        <p className="text-base font-bold border bg-blue-500 mb-3 text-white p-1">
           ওয়েব মাস্টার
         </p>
         <p className="text-gray-700 hover:text-blue-500 mb-20 cursor-pointer">
