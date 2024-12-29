@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const BreakingNotice = () => {
   return (
     <>
-      <div className="bg-gray-100 border-dotted border-blue-600 mb-2 py-1">
+      <div className="bg-gradient-to-b from-gray-100 border-dotted border-blue-600 mb-2 py-1 text-cText">
         <div className="flex  mx-auto ">
           <button className=" text-black px-4 py-2  hover:bg-blue-600">
             খবর:
@@ -18,7 +18,7 @@ const BreakingNotice = () => {
             থেকে সমস্ত পাওনাদি ১৮/১১/২০২৪ এর অক্টোবর ' ২০২৪ শিক্ষার্থী বেতন নগদ
             এপসের মাধ্যমে ০৫/১০/২০২৪ থেকে প্রদান প্রসঙ্গে text.
           </Marquee>
-          <button className="bg-blue-500 text-white px-4 py-2 text-end mr-4 rounded shadow hover:bg-blue-600">
+          <button className="bg-blue-500 text-white px-4 py-2 text-end mr-4 rounded shadow hover:bg-blue-600 font-semibold">
             সকল
           </button>
         </div>

@@ -6,7 +6,7 @@ import Sidebar from "../Shared/Sidebar";
 const LayOut = () => {
   return (
     <>
-      <div className="w-full lg:w-[900px] xl:w-[1200px] 2xl:w-[1500px] mx-auto px-5 bg-white shadow-2xl relative">
+      <div className="w-full lg:w-[960px] xl:w-[1200px] 2xl:w-[1500px] mx-auto px-5 bg-white shadow-2xl relative">
         <Header />
         <div className="flex flex-col md:flex-row">
           {/* Main Content */}

@@ -14,15 +14,17 @@ const Sidebar = () => {
           alt="Principal"
           className="w-64 h-72 rounded-sm mx-auto border border-gray-300"
         />
-        <p className="mt-2 text-gray-700 font-semibold">মোঃ আবুল কালাম আজাদ</p>
+        <p className="mt-2 text-gray-700 font-semibold text-cText">
+          মোঃ আবুল কালাম আজাদ
+        </p>
       </div>
 
       {/* Services Section */}
       <div className="mt-6">
-        <h3 className="text-lg font-bold border bg-blue-500 mb-2 text-white p-1">
+        <p className="text-base font-bold border bg-blue-500 mb-2 text-white p-1">
           অভ্যন্তরীণ ই-সেবা
-        </h3>
-        <ul className="list-disc list-inside text-gray-700">
+        </p>
+        <ul className="list-disc list-inside text-gray-700 text-cText font-semibold">
           <li className="hover:text-blue-500 text-red-700 cursor-pointer">
             <a href="http://eschool.sib.gov.bd/">ই-স্কুল</a>
           </li>
@@ -40,10 +42,10 @@ const Sidebar = () => {
 
       {/* Important Links Section */}
       <div className="mt-6">
-        <h3 className="text-lg font-bold border bg-blue-500 mb-2 text-white p-1">
+        <p className="text-base font-bold border bg-blue-500 mb-2 text-white p-1">
           গুরুত্বপূর্ণ লিঙ্ক
-        </h3>
-        <ul className="list-disc list-inside text-gray-700">
+        </p>
+        <ul className="list-disc list-inside text-gray-700 text-cText font-semibold">
           <li className="hover:text-blue-500 cursor-pointer">
             <a href="http://www.moedu.gov.bd/">শিক্ষা মন্ত্রণালয়</a>
           </li>
@@ -70,9 +72,9 @@ const Sidebar = () => {
 
       {/* Web Master Section */}
       <div className="mt-6">
-        <h3 className="text-lg font-bold border bg-blue-500 mb-2 text-white p-1">
+        <p className="text-base font-bold border bg-blue-500 mb-2 text-white p-1">
           ওয়েব মাস্টার
-        </h3>
+        </p>
         <p className="text-gray-700 hover:text-blue-500 mb-20 cursor-pointer">
           <a href="http://sib.gov.bd/webmaster/default.aspx">
             ওয়েব মাস্টার লগইন
