@@ -170,11 +170,11 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white w-full shadow-md mt-1">
-            <div className="w-[200px] bg-slate-300">
-              <div className="border-b-2 py-3">
+            <div className="w-[180px] bg-slate-300 text-cText">
+              <div className="border-b-2 py-3  hover:bg-blue-500 hover:text-white ">
                 <NavLink
                   to="/"
-                  className="text-gray-700 w-[200px]  hover:text-white hover:bg-blue-500 py-3 px-4"
+                  className=" py-3 px-4 "
                   activeClassName="text-blue-500 font-bold"
                 >
                   প্রথম পাতা
@@ -182,11 +182,11 @@ const Navbar = () => {
               </div>
 
               {/* পরিচিতি */}
-              <div className="group relative border-b-2">
-                <button className="text-gray-700  hover:text-white hover:bg-blue-500 py-3 px-4  ">
+              <div className="group relative border-b-2 hover:bg-blue-500 hover:text-white">
+                <button className="hover:text-white hover:bg-blue-500 py-3 px-4  ">
                   পরিচিতি
                 </button>
-                <div className="absolute w-[200px] left-0 hidden bg-white shadow-lg group-hover:block ">
+                <div className="absolute w-full left-[180px] top-0 hidden bg-white shadow-lg group-hover:block z-10 ">
                   <NavLink
                     to="/"
                     className="block py-3 text-left pl-4 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500 border-b-2 "
@@ -203,11 +203,9 @@ const Navbar = () => {
               </div>
 
               {/* জনবল */}
-              <div className="group relative">
-                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-b-2 ">
-                  জনবল
-                </button>
-                <div className="absolute w-[200px] left-0 hidden  bg-gradient-to-b from-gray-100 shadow-lg group-hover:block z-10">
+              <div className="group relative border-b-2 hover:text-white hover:bg-blue-500">
+                <button className="py-3 px-4">জনবল</button>
+                <div className="absolute w-full left-[180px] top-0 hidden  bg-white shadow-lg group-hover:block z-10">
                   <NavLink
                     to="/staff-1"
                     className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500"
@@ -218,11 +216,9 @@ const Navbar = () => {
               </div>
 
               {/* শিক্ষার্থী */}
-              <div className="group relative">
-                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-b-2 ">
-                  শিক্ষার্থী
-                </button>
-                <div className="absolute w-[272px] left-0 hidden  bg-white shadow-lg group-hover:block z-10">
+              <div className="group relative border-b-2 hover:text-white hover:bg-blue-500">
+                <button className="py-3 px-4  ">শিক্ষার্থী</button>
+                <div className="absolute w-full left-[180px] top-0 hidden  bg-white shadow-lg group-hover:block z-10">
                   <NavLink
                     to="/student-1"
                     className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500 border-b-2"
@@ -251,11 +247,9 @@ const Navbar = () => {
               </div>
 
               {/* পরীক্ষা ফলাফল */}
-              <div className="group relative">
-                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4  border-b-2 ">
-                  পরীক্ষা ফলাফল
-                </button>
-                <div className="absolute w-[250px] left-0 hidden bg-white shadow-lg group-hover:block z-10">
+              <div className="group relative border-b-2 hover:text-white hover:bg-blue-500">
+                <button className="py-3 px-4">পরীক্ষা ফলাফল</button>
+                <div className="absolute w-full left-[180px] top-0 hidden bg-white shadow-lg group-hover:block z-10">
                   <NavLink
                     to="/result-1"
                     className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500 border-b-2"
@@ -270,28 +264,42 @@ const Navbar = () => {
                   </NavLink>
                 </div>
               </div>
-              <div className="group relative">
-                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4  border-b-2 ">
+              <div className="border-b-2 py-3 hover:bg-blue-500 hover:text-white">
+                <NavLink
+                  to="/"
+                  className=" hover:text-white hover:bg-blue-500 py-3 px-4 "
+                  activeClassName="text-blue-500 font-bold"
+                >
                   ছবির গ্যালারী
-                </button>
+                </NavLink>
               </div>
-              <div className="group relative">
-                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-b-2">
+              <div className="border-b-2 py-3 hover:bg-blue-500 hover:text-white">
+                <NavLink
+                  to="/"
+                  className=" hover:text-white hover:bg-blue-500 py-3 px-4 "
+                  activeClassName="text-blue-500 font-bold"
+                >
                   যোগাযোগ
-                </button>
+                </NavLink>
               </div>
-              <div className="group relative">
-                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-b-2">
+              <div className="border-b-2 py-3 hover:bg-blue-500 hover:text-white">
+                <NavLink
+                  to="/"
+                  className=" hover:text-white hover:bg-blue-500 py-3 px-4 "
+                  activeClassName="text-blue-500 font-bold"
+                >
                   এপিএ
-                </button>
+                </NavLink>
               </div>
-              <NavLink
-                to="/"
-                className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-6 border-b-2  "
-                activeClassName="text-blue-500 font-bold"
-              >
-                শুদ্ধাচার কৌশল
-              </NavLink>
+              <div className="border-b-2 py-3 hover:bg-blue-500 hover:text-white">
+                <NavLink
+                  to="/"
+                  className=" hover:text-white hover:bg-blue-500 py-3 px-4 "
+                  activeClassName="text-blue-500 font-bold"
+                >
+                  শুদ্ধাচার কৌশল
+                </NavLink>
+              </div>
             </div>
           </div>
         )}
