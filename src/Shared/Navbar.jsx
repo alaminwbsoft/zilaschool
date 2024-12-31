@@ -22,7 +22,7 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg
-              className="w-6 h-6 bg-green-700"
+              className="w-7 h-7 bg-green-700"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -142,34 +142,54 @@ const Navbar = () => {
                 </NavLink>
               </div>
             </div>
-            <div className="group relative">
-              <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-r-2 border-t-0 border-b-0 border-l-0 ">
+            <div>
+              <NavLink
+                to="/"
+                className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-6 border-r-2 border-t-0 border-b-0 border-l-0 "
+                activeClassName="text-blue-500 font-bold"
+              >
                 ছবির গ্যালারী
-              </button>
+              </NavLink>
             </div>
-            <div className="group relative">
-              <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-r-2 border-t-0 border-b-0 border-l-0">
+            <div>
+              <NavLink
+                to="/"
+                className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-6 border-r-2 border-t-0 border-b-0 border-l-0 "
+                activeClassName="text-blue-500 font-bold"
+              >
                 যোগাযোগ
-              </button>
+              </NavLink>
             </div>
-            <div className="group relative">
-              <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-r-2 border-t-0 border-b-0 border-l-0">
+            <div>
+              <NavLink
+                to="/"
+                className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-6 border-r-2 border-t-0 border-b-0 border-l-0 "
+                activeClassName="text-blue-500 font-bold"
+              >
                 এপিএ
-              </button>
+              </NavLink>
             </div>
-            <NavLink
-              to="/"
-              className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-6 border-r-2 border-t-0 border-b-0 border-l-0 "
-              activeClassName="text-blue-500 font-bold"
-            >
-              শুদ্ধাচার কৌশল
-            </NavLink>
+            <div>
+              <NavLink
+                to="/"
+                className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-6 border-r-2 border-t-0 border-b-0 border-l-0 "
+                activeClassName="text-blue-500 font-bold"
+              >
+                শুদ্ধাচার কৌশল
+              </NavLink>
+            </div>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white w-full shadow-md mt-1">
+          <div
+            className={`md:hidden bg-white w-full shadow-md mt-1 transform transition-transform duration-500 ease-in-out opacity-0 ${
+              isMobileMenuOpen
+                ? "-translate-x-4 opacity-100"
+                : "-translate-x-full opacity-0"
+            }`}
+          >
             <div className="w-[180px] bg-slate-300 text-cText">
               <div className="border-b-2 py-3  hover:bg-blue-500 hover:text-white ">
                 <NavLink
