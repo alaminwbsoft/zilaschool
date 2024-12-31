@@ -3,7 +3,7 @@ import teacher from "../assets/teacher.jpg";
 
 const Sidebar = () => {
   return (
-    <div className="pl-5 bg-white">
+    <div className="pl-5 bg-white hidden md:block">
       {/* Header */}
       <div className="text-center">
         <p className="text-lg font-bold border bg-blue-500 mb-2 text-white p-1">

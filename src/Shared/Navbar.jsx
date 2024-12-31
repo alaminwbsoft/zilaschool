@@ -12,17 +12,17 @@ const Navbar = () => {
           {/* Logo (Only for mobile devices) */}
           <div className="text-2xl font-bold text-blue-600">
             <NavLink to="/">
-              <img src={logo} alt="" className="h-16 w-16" />
+              <img src={logo} alt="" className="h-16 w-16 p-1" />
             </NavLink>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="text-gray-700 hover:text-blue-500 focus:outline-none"
+            className="text-white hover:text-red-700 focus:outline-none"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg
-              className="w-6 h-6 bg-red-700"
+              className="w-6 h-6 bg-green-700"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -169,50 +169,130 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white shadow-md">
-            <NavLink
-              to="/"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-            >
-              প্রথম পাতা
-            </NavLink>
-            <div className="relative">
-              <button className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
-                পরিচিতি
-              </button>
-              <div className="px-6">
+          <div className="md:hidden bg-white w-full shadow-md mt-1">
+            <div className="w-[200px] bg-slate-300">
+              <div className="border-b-2 py-3">
                 <NavLink
-                  to="/introduction-1"
-                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-blue-500"
+                  to="/"
+                  className="text-gray-700 w-[200px]  hover:text-white hover:bg-blue-500 py-3 px-4"
+                  activeClassName="text-blue-500 font-bold"
                 >
-                  পরিচিতি ১
-                </NavLink>
-                <NavLink
-                  to="/introduction-2"
-                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-blue-500"
-                >
-                  পরিচিতি ২
+                  প্রথম পাতা
                 </NavLink>
               </div>
+
+              {/* পরিচিতি */}
+              <div className="group relative border-b-2">
+                <button className="text-gray-700  hover:text-white hover:bg-blue-500 py-3 px-4  ">
+                  পরিচিতি
+                </button>
+                <div className="absolute w-[200px] left-0 hidden bg-white shadow-lg group-hover:block ">
+                  <NavLink
+                    to="/"
+                    className="block py-3 text-left pl-4 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500 border-b-2 "
+                  >
+                    এক নজরে পরিচিতি
+                  </NavLink>
+                  <NavLink
+                    to="/short-history"
+                    className="block text-left  py-3 pl-4 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500"
+                  >
+                    সংক্ষিপ্ত ইতিহাস
+                  </NavLink>
+                </div>
+              </div>
+
+              {/* জনবল */}
+              <div className="group relative">
+                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-b-2 ">
+                  জনবল
+                </button>
+                <div className="absolute w-[200px] left-0 hidden  bg-gradient-to-b from-gray-100 shadow-lg group-hover:block z-10">
+                  <NavLink
+                    to="/staff-1"
+                    className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500"
+                  >
+                    শিক্ষক-শিক্ষিকা
+                  </NavLink>
+                </div>
+              </div>
+
+              {/* শিক্ষার্থী */}
+              <div className="group relative">
+                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-b-2 ">
+                  শিক্ষার্থী
+                </button>
+                <div className="absolute w-[272px] left-0 hidden  bg-white shadow-lg group-hover:block z-10">
+                  <NavLink
+                    to="/student-1"
+                    className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500 border-b-2"
+                  >
+                    অধ্যয়নরত শিক্ষার্থীর সংখ্যা
+                  </NavLink>
+                  <NavLink
+                    to="/student-2"
+                    className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500 border-b-2"
+                  >
+                    অধ্যয়নরত শিক্ষার্থীর তালিকা
+                  </NavLink>
+                  <NavLink
+                    to="/student-2"
+                    className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500 border-b-2"
+                  >
+                    ডিজিটাল হাজিরার তথ্য
+                  </NavLink>
+                  <NavLink
+                    to="/student-2"
+                    className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500"
+                  >
+                    বেতন ও অন্যান্য ফি প্রদানের তথ্য
+                  </NavLink>
+                </div>
+              </div>
+
+              {/* পরীক্ষা ফলাফল */}
+              <div className="group relative">
+                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4  border-b-2 ">
+                  পরীক্ষা ফলাফল
+                </button>
+                <div className="absolute w-[250px] left-0 hidden bg-white shadow-lg group-hover:block z-10">
+                  <NavLink
+                    to="/result-1"
+                    className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500 border-b-2"
+                  >
+                    পাবলিক পরীক্ষা
+                  </NavLink>
+                  <NavLink
+                    to="/result-2"
+                    className="block text-left pl-4 py-3 text-gray-600 hover:bg-gradient-to-b from-gray-100 hover:text-blue-500"
+                  >
+                    বিদ্যালয়ের অভ্যন্তরীণ পরীক্ষা
+                  </NavLink>
+                </div>
+              </div>
+              <div className="group relative">
+                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4  border-b-2 ">
+                  ছবির গ্যালারী
+                </button>
+              </div>
+              <div className="group relative">
+                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-b-2">
+                  যোগাযোগ
+                </button>
+              </div>
+              <div className="group relative">
+                <button className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-4 border-b-2">
+                  এপিএ
+                </button>
+              </div>
+              <NavLink
+                to="/"
+                className="text-gray-700 hover:text-white hover:bg-blue-500 py-3 px-6 border-b-2  "
+                activeClassName="text-blue-500 font-bold"
+              >
+                শুদ্ধাচার কৌশল
+              </NavLink>
             </div>
-            <NavLink
-              to="/staff-1"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-            >
-              জনবল
-            </NavLink>
-            <NavLink
-              to="/student-1"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-            >
-              শিক্ষার্থী
-            </NavLink>
-            <NavLink
-              to="/result-1"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-            >
-              পরীক্ষা ফলাফল
-            </NavLink>
           </div>
         )}
       </div>

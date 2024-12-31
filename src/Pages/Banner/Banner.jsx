@@ -14,7 +14,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[320px] overflow-hidden">
+    <div className="relative w-full md:h-[320px] overflow-hidden">
       {/* Banner Image */}
       <div className="w-full h-full">
         <img
